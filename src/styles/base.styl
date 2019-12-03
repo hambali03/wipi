@@ -27,25 +27,26 @@ figure
 video
   vertical-align middle
 
+.profil
+  width 100px
+  height 100px
+  float left
+  
+
 .gambar_profil 
   width 100px
   height 100px
   border-radius 50%
   border 0px 10px 10px 0px
-  padding 5px
-  display inline
+  padding 1px
 
-.gambar1
-  background green
-	display inline-block
-				margin-left 10px
-
-.gambar p
+.nama
+  float left
   position  absolute
   display inline-block
 
-
 .deck
+  float left
   overflow hidden
   font-feature-settings "kern" 1
   text-rendering optimizeLegibility
@@ -69,7 +70,7 @@ video
   overflow hidden
   // NOTE force opacity to start at 0 to avoid transition on load when using bespoke-scale
   opacity 0
-  background-color #aaa
+  background-color #fff
   position absolute
   top 50%
   left 50%
@@ -78,6 +79,7 @@ video
   height 480px
   margin-top -(@height / 2)
   display flex
+  float left
   flex-direction column
   align-items center
   justify-content center
