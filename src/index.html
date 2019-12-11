@@ -28,10 +28,12 @@
     }
 
 
-    .deskrip{
-    text-align: justify;
+    .deskripsi{
+      text-align: justify;
       font-size: 12px;
       font-family: Georgia, 'Times New Roman', Times, serif;
+      padding: 5px;
+      word-break: break-all;
     }
     .atas{
       font-size: 12px;
@@ -42,93 +44,182 @@
     margin-left: auto;
     margin-right: auto;
     }
+
+    .polaroid{
+      width: 95%;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 10px;
+      margin: auto;
+      border-radius: 10px;
+      -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+      transition: width 2s;
+
+      
+    }
+    .polaroid:hover{
+      width: 100%;
+      }
+    .PolaroidVideo{
+      width: 640px;
+      height: 340px;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 10px;
+      border-radius: 50px;
+    }
+
+    .polaroid1{
+      width: 95%;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 10px;
+      border-radius: 10px;
+      margin: auto;
+      -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+      transition: width 2s;
+    }
+    .polaroid1:hover{
+      width: 100%;
+    }
+    .container{
+      text-align: center;
+      padding: 5px 5px;
+    }
+    .GoogleWifi{
+      align-content: center;
+      margin-left: 140px;
+      margin-top: 10px;
+      border-radius: 10px;
+      transition: opacity 200ms ease-in-out;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+      transition: width 2s;
+    }
+    .GoogleWifi:hover{
+      width: 50%;
+    }
+	.shining{
+		position: relative;
+		font-family: sans-serif;
+		color: #000;
+		text-transform: uppercase;
+		font-size: 2em;
+		letter-spacing: 4px;
+		overflow: hidden;
+		background: linear-gradient(90deg, #000, #fff, #000);
+		background-repeat: no-repeat;
+		background-size: 80%;
+		animation: animation 3s linear infinite;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: rgba(255, 255, 255, 0);
+	}
+	@keyframes animation{
+    0%{
+        background-position: -500%;
+    }
+    100%{
+        background-position: 500%;
+    }
+}
     </style>
 </head>
 <body>
 <article class="deck">
   <section>
-    <h1>Google Smart Products</h1>
+    <h1 class="shining">Google Smart Products</h1>
     <h3>Our Team</h3>
-    <div class="profil">
-        <div class="ket">
+        <div class="profil">
+          <div class="ket">
             <img class="gambar_profil" src="images/profil/tio.jpg"> 
             <p>Bambang Satrio Wibowo</p>
-        </div>
-        <div class="ket">
+          </div>
+       
+          <div class="ket">
             <img class="gambar_profil" src="images/profil/ammar.jpeg"> 
             <p>Ammar yasir Nasution</p>
-        </div>
-        <div class="ket">
+          </div>
+          <div class="ket">
             <img class="gambar_profil" src="images/profil/indra.jpeg"> 
             <p>Indra Rahmawan</p>
-        </div>
-        <div class="ket">
+          </div>
+          <div class="ket">
             <img class="gambar_profil" src="images/profil/hambali.jpg"> 
             <p>Hambali Lubis</p>
-        </div>
-        <div class="ket">
+          </div>
+          <div class="ket">
             <img class="gambar_profil" src="images/profil/saftar.jpeg">
             <p>Abduh Saftar</p>
+          </div>
         </div>
-      </div>
   </section>
 
   <section>
     <h2>Google Siap ‘Invasi’ Rumah Anda dengan Google Wifi, Google Home dan Chromecast Ultra</h2>
-      <img class="produk" src="images/produk/made-by-google.jpg" width="450" height="250">
-      <div class="deskrip">
-        <p>Beberapa bulan terakhir Google tampaknya sibuk membangun divisi hardware dan mengembangkan berbagai macam perangkat. 
-          Selain smartphone dan VR headset baru, raksasa internet tersebut juga memperkenalkan tiga perangkat baru untuk kebutuhan rumahan: 
-          Google Wifi, Google Home dan Chromecast Ultra.</p>
-      </div>
+    <ul class="build build-items">
+      <li>
+        <div class="polaroid">
+          <img class="produk" src="images/produk/made-by-google.jpg" width="450" height="250">
+          <div class="container">
+            <p>Produk</p>
+          </div>
+          <div class="deskripsi">
+          <p>Tiga perangkat baru untuk kebutuhan rumahan: Google Wifi, Google Home dan Chromecast Ultra.</p>
+          </div>
+        </div>  
+      </li>
+    </ul>
   </section>
 
   <section>
     <h2>Google Wifi</h2>
-    <div class="atas">
-      <p>Sesuai namanya, Google Wifi merupakan sebuah router Wi-Fi. 
-        Ia merupakan kelanjutan dari OnHub yang diluncurkan tahun lalu dengan dua model buatan TP-LINK dan Asus. 
-        Kali ini, Google sepertinya sudah cukup percaya diri untuk merancang Google Wifi sendiri.</p>
+    <ul class="build build-items">
+    <div class="polaroid">
+      <img class="GoogleWifi" src="images/produk/google-wifi.jpg" width="350" height="150">
+      <div class="container">
+        <p>Google Wifi</p>
+      </div>
+      <div class="deskripsi">
+        <p>Keunggulan utama Google Wifi terletak pada penggunaan teknologi mesh network, dimana satu router yang terhubung dengan 
+           kabel Ethernet bisa berkomunikasi dengan router lainnya, membentuk suatu jaringan Wi-Fi dengan cakupan yang amat luas</p>
+      </div>
     </div>
-    <img src="images/produk/google-wifi.jpg" width="350" height="150">
-    <div class="deskrip">
-      <p>Keunggulan utama Google Wifi terletak pada penggunaan teknologi mesh network, dimana satu router yang terhubung dengan 
-         kabel Ethernet bisa berkomunikasi dengan router lainnya, membentuk suatu jaringan Wi-Fi dengan cakupan yang amat luas. 
-         Sederhananya, kalau rumah Anda besar, Anda tinggal menempatkan dua atau tiga Google Wifi dan menikmati akses internet di segala sudut rumah.</p>
-      <p>Google mengklaim tidak ada proses pengaturan kompleks yang harus dihadapi pengguna. Semuanya berjalan secara otomatis. 
-        Google Wifi datang bersama sebuah aplikasi pendamping untuk memonitor koneksi sekaligus perangkat apa saja yang terhubung. 
-        Pengguna juga bisa menyetop akses internet pada suatu perangkat untuk sementara, berguna ketika sudah waktunya makan malam dan anak Anda masih asyik dengan tablet-nya di kamar.</p>
-    </div>
+  </ul>
+    <br>
   </section>
 
   <section>
     <h2>Google Home</h2>
-    <div class="atas">
-      <p>Google Home sebenarnya sempat disinggung di ajang Google I/O 2016 lalu. Perangkat ini merupakan speaker nirkabel dengan 
-        Google Assistant terintegrasi. Hal ini berarti kendalinya mengandalkan perintah suara secara penuh, dan ada banyak yang 
-        bisa dilakukan dengannya; mulai dari memutar musik, melakukan pencarian di Google sampai mengontrol perangkat smart home.</p>
+    <ul class="build build-items">
+    <div class="polaroid" mx-auto mt-5>
+      <img class="GoogleWifi" src="images/produk/google-home.jpg" width="350" height="150">
+      <div class="container">
+        <p>Google Home</p>
+      </div>
+      <div class="deskripsi">
+        <p>Google Home bisa memutar musik dari berbagai layanan streaming secara langsung, baik Google Play Music, Pandora, Spotify, TuneIn atau YouTube. 
+          Pengguna juga bisa memutar musik yang berasal dari ponselnya dengan cara yang sama seperti menggunakan Chromecast.</p>
+      </div>
     </div>
-    <img src="images/produk/google-home.jpg" width="350" height="150">
-    <div class="deskrip">
-      <p>Google Home bisa memutar musik dari berbagai layanan streaming secara langsung, baik Google Play Music, Pandora, Spotify, TuneIn atau YouTube. 
-        Pengguna juga bisa memutar musik yang berasal dari ponselnya dengan cara yang sama seperti menggunakan Chromecast.</p>
-      <p>Bicara soal Chromecast, Google Home dapat digunakan untuk mengendalikan TV atau speaker yang ditancapi Chromecast menggunakan suara. 
-        Yup, Anda tidak perlu memakai smartphone untuk memutar video Netflix di TV, cukup ucapkan “OK Google” dan bicara 
-        dengan gaya yang alami, maka Google Assistant akan memahaminya.</p>
-    </div>
+    </ul>
+    <br>
   </section>
 
   <section>
     <h2>Chromecast Ultra</h2>
-    <div class="atas">
-      <p>Chromecast generasi kedua bisa dibilang sebagai salah satu produk tersukses Google. Penerusnya kini mengusung label “Ultra”, 
-        mengindikasikan lonjakan performa sekaligus spesifikasi yang lebih canggih.</p>
-        <img class = "gambar1"src="images/produk/chromecast-ultra.jpg" width="350" height="250">
-      <div class="deskrip">
-        <p>Benar saja, Chromecast Ultra siap memutar video beresolusi 4K maupun yang berformat HDR. Waktu loading juga diklaim lebih cepat 1,8 kali, 
-          dan ia dibekali port Ethernet pada adapter-nya seandainya jaringan Wi-Fi Anda kurang bagus.</p>
+    <ul class="build build-items">
+        <div class="polaroid1"  mx-auto mt-5>
+          <img class = "GoogleWifi"src="images/produk/chromecast-ultra.jpg" width="350" height="250">
+          <div class="container">
+            <p>Chromecast Ultra</p>
+          </div>
+          <div class="deskripsi">
+              <p>Chromecast Ultra siap memutar video beresolusi 4K maupun yang berformat HDR 
+                dan ia dibekali port Ethernet pada adapter-nya seandainya jaringan Wi-Fi Anda kurang bagus.</p>
+          </div>
       </div>
-    </div>
+    </ul>
+      <br>
   </section>
 
   <section>
@@ -145,7 +236,14 @@
 
   <section>
     <h2>Video Produk</h2>
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/vPqslcwZ8Kk?rel=0&amp;showinfo=0&amp;controls=0&amp;enablejsapi=1&amp;loop=1&amp;playlist=vPqslcwZ8Kk" frameborder="0" allowfullscreen data-volume="50"></iframe>
+<<<<<<< HEAD
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/vPqslcwZ8Kk?rel=0&amp;showinfo=0&amp;
+    controls=0&amp;enablejsapi=1&amp;loop=1&amp;playlist=Dfa1vyMM2DE&feature=emb_logo" frameborder="0" allowfullscreen data-volume="50"></iframe>
+=======
+    <div class="PolaroidVideo">
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/vPqslcwZ8Kk?rel=0&amp;showinfo=0&amp;controls=0&amp;enablejsapi=1&amp;loop=1&amp;playlist=vPqslcwZ8Kk" frameborder="0" allowfullscreen data-volume="50"></iframe>
+    </div>
+>>>>>>> 74a418f84ddc27dd51640b390ea46afbc7f83f84
   </section>
 
   <section>
